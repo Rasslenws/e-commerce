@@ -48,13 +48,13 @@ nav h1 div:last-child{
 
 
   .container{
-    width: 85vmin;
+    width: 100vmin;
     position: relative;
     transform: translate(-50%,10%);
     top: 50%;
     left: 50%;
     overflow: hidden;
-    width: 50%;
+   
     
 
   }
@@ -91,4 +91,68 @@ nav h1 div:last-child{
     }
 
   }
+  h2{
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+  }
+
+
+  .card {
+    max-width: 300px;
+    margin-left: 100px;
+    text-align: center;
+    font-family: arial;
+    display: grid; 
+    grid-template-columns: repeat(4,1fr);
+    column-gap:50px ;
+    
+  
+  }
+ 
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+.card-div{
+  width: 300px;
+
+}
+
+@media screen and (max-width:800px) 
+
+{
+  .card{
+   
+  
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+}
+
+
+
+   
+   
+
+
+
+  
  
