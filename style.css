@@ -9,6 +9,21 @@ header {
   background: #ffff;
   padding: 10px;
 }
+footer{
+ background-color: #ffff;
+  padding: 30px 30px 30px 30px;
+}
+footer p {
+  color:#333;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+footer a{
+  text-decoration: none;
+  color:#333;
+}
+
 
 nav {
   max-width: 1400px;
@@ -87,7 +102,7 @@ img {
 }
 h2 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 90px;
   text-transform: uppercase;
 }
 
@@ -122,11 +137,70 @@ h2 {
   opacity: 0.7;
 }
 .card-div {
-  width: 300px;
+  width: 200px;
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 800px) {
   .card {
     grid-template-columns: repeat(2, 1fr);
   }
+  .container-img{
+    grid-template-columns: 1fr
+  }
+}
+
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+
+}
+
+.zoom:hover {
+  transform: scale(1.7); 
+}
+.container-img{
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  position: relative;
+}
+
+
+.overlay {
+  position: absolute;
+  background:transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.text-1 a {
+  color: white;
+  font-size: 40px;
+  font-weight: 900  ;
+  position: absolute;
+  top: 40%;
+  left: 29%;
+  transform: translate(-40%, -29%);
+  text-decoration: none;
+}
+.text-1 a:hover{
+  font-size: 50px;
+  transition-duration: 1s;
+}
+.text-2 a{
+  color: white;
+  font-size: 40px;
+  font-weight: 900  ;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  transform: translate(-40%, -29%);
+  text-decoration: none;
+}
+.text-2 a:hover{
+  font-size: 50px;
+  transition-duration: 1s;
 }
