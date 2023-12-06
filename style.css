@@ -189,6 +189,7 @@ h1{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 50px;
+  max-width: 1200px;
 }
 
 .price {
@@ -209,6 +210,7 @@ h1{
   width: 100%;
   font-size: 18px;
   transition: .2s;
+ 
 }
 
 .card button:hover {
@@ -225,15 +227,35 @@ h1{
   margin-bottom: 20px;
 }
 
-@media (max-width: 750px) {
+
+/* responsive  cards */
+
+@media (max-width: 1250px) {
   .card {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     
   }
   .container-img{
     grid-template-columns: 1fr
   }
 }
+@media (max-width: 950px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: -1px;
+    
+  }
+}
+@media (max-width: 650px) {
+  .card {
+    grid-template-columns: 1fr;
+    margin-left: 80px;
+    
+  }
+}
+
+
+
 
 .zoom {
   transition: transform .2s;
@@ -250,6 +272,7 @@ h1{
   grid-template-columns: repeat(2,1fr);
   position: relative;
 }
+
 
 
 .overlay {
@@ -287,6 +310,7 @@ h1{
   font-size: 50px;
   transition-duration: 1s;
 }
+
 
 
 
