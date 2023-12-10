@@ -30,7 +30,7 @@ nav {
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   text-align: center;
   align-items: center;
   justify-content: space-around;
@@ -76,10 +76,15 @@ nav h1 div:last-child {
 @media screen and (max-width: 960px) {
   nav {
     grid-template-columns: repeat(4, 1fr);
+
   }
   nav h1 {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
     grid-row: 1;
+  }
+  .fa-user-circle-o{
+   margin-right: 20px;
+   margin-left: 20px;
   }
 }
 
@@ -553,6 +558,118 @@ transition: .3s;
     font-weight:500;
 
 
+  }
+  .login{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(186,186,189,1) 0%, rgba(93,94,94,1) 100%);
+    overflow: hidden;
+    height: 100vh;
+  }
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    
+  }
+  .center h1{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+  }
+  .center form{
+    padding: 0 40px;
+    box-shadow:border-box;
+  }
+  form .text{
+    position: relative;
+    border-bottom: 2px solid #464545;
+    margin: 30px 0;
+  }
+  .text input{
+    width: 100%;
+    padding: 0 4px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .text label{
+    position: absolute;
+    top:50%;
+    left: 5px;
+    color:#cbc8c8;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none  ;
+    transition: .5s;
+  }
+  .text span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+
+  }
+  .text input:focus ~label,
+  .text input:valid ~label{
+    top: -5px;
+    color: #000;
+
+  }
+  .text input:focus ~span::before,
+  .text input:valid ~span::before{
+    width: 100%;
+  }
+  .pass{
+    margin: -5px 0 20px 5px;
+    color: #cbc8c8;
+    cursor: pointer;
+  }
+  .pass:hover{
+    text-decoration: underline;
+    color: blue;
+  }
+  input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px ;
+    background: #000;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+    transition: .5s;
+
+
+  }
+  input[type="submit"]:hover{
+    box-shadow: 2px 3px 10px #cbc8c8;
+    transform: scale(1.1);
+  }
+  .sign-up{
+    margin:30px 0;
+    text-align: center;
+    color: #666666;
+  }
+  .sign-up a{
+    color: blue;
+    text-decoration: none;
+  }
+  .sign-up a:hover{
+    text-decoration: underline;
   }
 
 
